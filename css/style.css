@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/* ===================== */
+
+/* INDISPENSABLES */
+
+/* Boites */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Clearfix */
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/* Texte Invisible */
+
+.no_text {
+    font-size: 0;
+    margin: 0;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===================== */
+
+/* === Grille === */
+
+/* === Titres, textes et polices === */
+
+html {
+    font-size: 75%; /* 1rem > 12px */
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* === Boutons & CTA === */
+
+/* ===================== */
+
+/* === Header === */
+
+header {
+    background-color: deepskyblue;
+    background-image: url(../images/background_header.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 25px 0;
+    height: 100px;
+    color: #fff;
+}
+
+header.header-home {
+    background-position: bottom center;
+    height: 600px;
+}
+
+/* Topbar */
+
+div#topbar {
+    /* background: orange; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social Nav */
+
+#social_nav a,
+#social_nav:visited {
+    display: block;
+    height: 60px;
+    transition: all .5s;
+}
+
+#social_nav a#picto_facebook {
+    background-image: url(../images/picto_facebook.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#social_nav a#picto_twitter {
+    background-image: url(../images/picto_twitter.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#social_nav a#picto_instagram {
+    background-image: url(../images/picto_instagram.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Survol */
+
+#social_nav a:hover,
+#social_nav a:focus,
+#social_nav a:active {
+    opacity: .5;
+}
+
+/* Titres */
+
+header h2 {
+    font-size: 3.01em;
+    margin: 120px 0 0;
+}
+
+header h3 {
+    font-size: 1.34em;
+    letter-spacing: .125em;
+    margin: 10px 0;
+}
+
+/* article > miniature */
+
+article.miniature {
+    background: aqua;
+    position: relative;
+}
+
+article.miniature a,
+article.miniature a:visited {
+    text-decoration: none;
+}
+
+article.miniature a:hover,
+article.miniature a:focus,
+article.miniature a:active {
+    opacity: .5;
+}
+
+article.miniature img {
+    display: block;
+}
+
+p.likes {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    top: 260px;
+    left: 20px;
+}
+
+article.miniature div.infos {
+    background-color: #fff;
+    padding: 20px;
+    color: #808080;
+    font-style: italic;
+    text-align: left;
+}
+
+div.infos h3 {
+    font-size: 1em;
+    margin: 0 0 5px;
+}
+
+div.infos p {
+    margin: 7px 0;
+}
+
+div.infos p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Main */
+
+/* Photos */
+
+section#photos {
+    background-color: #eee;
+    padding: 50px 0;
+}
+
+#photos #photos_content {
+    background-color: red; 
+}
+
+
+/* Contact */
+
+section#contact {
+    background-color: bisque;
+}
+
+/* Footer */
+
+footer {
+    background-color: chartreuse;
+}
